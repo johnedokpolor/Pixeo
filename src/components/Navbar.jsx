@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import { Context } from "../context/Context";
 import { FaMoon, FaSun, FaSearch } from "react-icons/fa";
@@ -9,6 +9,7 @@ import UserDetails from "./UserDetails";
 import Logo from "../assets/pixeologo.jpg";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const {
     dark,
     setDark,
@@ -34,7 +35,10 @@ const Navbar = () => {
           </div>
           {search ? (
             <IoIosArrowRoundBack
-              onClick={() => setSearch(false)}
+              onClick={() => {
+                navigate(-1);
+                setSearch(false);
+              }}
               className="text-4xl"
             />
           ) : (
