@@ -38,7 +38,7 @@ const VideoCard = ({ video, location }) => {
           />
           <p className="mt-2 px-3 font-bold lg:px-0">{title4}...</p>
         </Link>
-        <div className="h-[50px] w-[100%] px-3 lg:px-0">
+        <div className="w-[100%] px-3 lg:px-0">
           <Link
             onClick={() => setLoading(true)}
             to={
