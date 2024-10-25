@@ -51,14 +51,14 @@ const Navbar = () => {
         )}
 
         {!search && (
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <FaSearch
               onClick={() => setSearch(true)}
-              className="text-black dark:text-white lg:hidden"
+              className="text-xl text-black dark:text-white lg:hidden"
             />
 
             <div
-              className="md:cursor-pointer"
+              className="text-xl md:cursor-pointer"
               onClick={() => setDark((prev) => !prev)}
             >
               {dark ? <FaSun /> : <FaMoon />}

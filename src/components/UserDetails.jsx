@@ -7,7 +7,7 @@ const UserDetails = () => {
   };
   return (
     <div className="group relative md:cursor-pointer">
-      <div className="relative bottom-[5px] mt-3 flex h-8 w-8 items-center justify-center rounded-full bg-[#386bbd] text-white">
+      <div className="relative bottom-[5px] mt-3 flex h-9 w-9 items-center justify-center rounded-full bg-[#386bbd] text-white">
         {userData.name.slice(0, 1)}
       </div>
       <div className="absolute right-0 z-[50] mt-3 hidden w-[300px] flex-col items-center rounded-xl bg-gray-200 p-3 shadow-lg group-hover:flex dark:bg-[#1f1f1f] md:w-[400px]">

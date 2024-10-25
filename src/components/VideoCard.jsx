@@ -7,7 +7,7 @@ import moment from "moment";
 
 const VideoCard = ({ video, location }) => {
   const { extended, valueConverter, setLoading } = useContext(Context);
-  const title = video?.snippet?.title.slice(0, 40);
+  const title = video?.snippet?.title.slice(0, 60);
   const title2 = title.split("&amp;").join("&");
   const title3 = title2.split("&#39;").join("'");
   const title4 = title3.split("&quot;").join('"');
@@ -17,10 +17,10 @@ const VideoCard = ({ video, location }) => {
       <div
         className={
           location
-            ? "w-[90vw] sm:w-[300px]"
+            ? "w-[100vw] sm:w-[300px]"
             : extended
-              ? "w-[90vw] sm:w-[260px]"
-              : "w-[90vw] sm:w-[300px]"
+              ? "w-[100vw] sm:w-[260px]"
+              : "w-[100vw] sm:w-[300px]"
         }
       >
         <Link
@@ -32,13 +32,13 @@ const VideoCard = ({ video, location }) => {
           }
         >
           <img
-            className="h-auto w-[100%] rounded-xl"
+            className="h-auto w-[100%] rounded-none lg:rounded-xl"
             src={video?.snippet?.thumbnails?.medium?.url}
             alt={video?.snippet?.title}
           />
-          <p className="mt-2 font-bold">{title4}...</p>
+          <p className="mt-2 px-3 font-bold lg:px-0">{title4}...</p>
         </Link>
-        <div className="h-[50px] w-[100%]">
+        <div className="h-[50px] w-[100%] px-3 lg:px-0">
           <Link
             onClick={() => setLoading(true)}
             to={

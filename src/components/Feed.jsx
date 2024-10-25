@@ -21,7 +21,7 @@ const Feed = () => {
   }, [selectedCategory]);
   return (
     <div className="mt-32 flex-1 lg:mt-16">
-      <div className="flex-1 px-5 pt-3">
+      <div className="flex-1 pt-3 lg:px-5">
         <Videos videos={videos} />
       </div>
       {response === 403 && (

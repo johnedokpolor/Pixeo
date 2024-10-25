@@ -14,10 +14,10 @@ const VideoCardSkeleton = ({ cards }) => {
           key={i}
           className={
             location
-              ? "w-[90vw] sm:w-[300px]"
+              ? "w-[100vw] sm:w-[300px]"
               : extended
-                ? "w-[90vw] sm:w-[260px]"
-                : "w-[90vw] sm:w-[300px]"
+                ? "w-[100vw] sm:w-[260px]"
+                : "w-[100vw] sm:w-[300px]"
           }
         >
           <div>
@@ -26,10 +26,10 @@ const VideoCardSkeleton = ({ cards }) => {
                 baseColor={dark ? "#202020" : ""}
                 highlightColor={dark ? "#444" : ""}
               >
-                <Skeleton className="h-[170px]" />
+                <Skeleton className="h-[200px] lg:h-[170px]" />
               </SkeletonTheme>
             </div>
-            <p className="mt-2 font-bold">
+            <p className="mt-2 px-3 font-bold lg:px-0">
               <SkeletonTheme
                 baseColor={dark ? "#202020" : ""}
                 highlightColor={dark ? "#444" : ""}
@@ -38,7 +38,7 @@ const VideoCardSkeleton = ({ cards }) => {
               </SkeletonTheme>
             </p>
           </div>
-          <div className="h-[50px] w-[100%]">
+          <div className="h-[50px] w-[100%] px-3 lg:px-0">
             <p className="text-sm opacity-80">
               <SkeletonTheme
                 baseColor={dark ? "#202020" : ""}

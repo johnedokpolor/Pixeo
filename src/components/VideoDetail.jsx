@@ -56,7 +56,7 @@ const VideoDetail = () => {
     );
   }, [id]);
   return (
-    <div className="w-screen gap-5 px-2 pt-32 lg:ml-[65px] lg:flex lg:h-screen lg:justify-between lg:px-5 lg:pt-20">
+    <div className="w-screen gap-5 pt-32 lg:ml-[65px] lg:flex lg:h-screen lg:justify-between lg:px-5 lg:pt-20">
       <div className="mb-5 flex-1">
         <div className="h-[250px] sm:h-[300px] md:h-[400px] lg:h-[430px]">
           <ReactPlayer
@@ -66,11 +66,11 @@ const VideoDetail = () => {
           />
         </div>
 
-        <p className="mt-1 text-xl font-bold">
+        <p className="mt-1 px-3 text-xl font-bold lg:px-0">
           {videoDetails?.snippet?.title.slice(0, 60)}
           {videoDetails && <span>...</span>}
         </p>
-        <p className="text-sm">
+        <p className="px-3 text-sm lg:px-0">
           {valueConverter(videoDetails?.statistics?.viewCount) || (
             <SkeletonTheme
               baseColor={dark ? "#202020" : ""}
@@ -84,7 +84,7 @@ const VideoDetail = () => {
             <span>{moment(videoDetails?.snippet?.publishedAt).fromNow()}</span>
           )}
         </p>
-        <div className="mt-2 flex-wrap items-center justify-between md:flex">
+        <div className="mt-2 flex-wrap items-center justify-between px-3 md:flex lg:px-0">
           <div className="mb-3 flex items-center justify-between gap-4">
             {
               <Link className="flex items-center gap-3" to={`/channel/${cid}`}>
