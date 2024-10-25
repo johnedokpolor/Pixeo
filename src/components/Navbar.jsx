@@ -38,6 +38,7 @@ const Navbar = () => {
               onClick={() => {
                 navigate(-1);
                 setSearch(false);
+                setLoading(true)
               }}
               className="text-4xl"
             />
