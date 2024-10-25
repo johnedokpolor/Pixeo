@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from "react";
 import Videos from "./Videos";
-import { fetchFromRAAPI } from "../utils/fetchFromAPI";
+import { fetchFromRAAPI, fetchFromYTAPI } from "../utils/fetchFromAPI";
 import { Context } from "../context/Context";
 const Feed = () => {
   const { selectedCategory, response, setResponse, setLoading } =

@@ -6,6 +6,7 @@ const fetchFromYTAPI = async (url) => {
     method: "GET",
     url: base_url,
     params: {
+      maxResults: 50,
       regionCode: "US",
       key: "AIzaSyC - KHbiq206f_e9at6T6oEPJ5l8bGPmGyI",
     },
@@ -25,6 +26,7 @@ const fetchFromRAAPI = async (url) => {
     method: "GET",
     url: base_url,
     params: {
+      maxResults: 50,
       regionCode: "US",
     },
     headers: {
