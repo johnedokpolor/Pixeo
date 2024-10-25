@@ -91,7 +91,7 @@ const VideoDetail = () => {
                 <div className="w-7 rounded-full lg:w-10">
                   {channelDetails ? (
                     <img
-                      className="h-7 w-7 rounded-full lg:w-10"
+                      className="h-7 w-7 rounded-full lg:h-10 lg:w-10"
                       src={channelDetails?.snippet?.thumbnails?.medium?.url}
                       alt={channelDetails?.snippet?.title}
                     />

@@ -11,7 +11,7 @@ const VideoCard = ({ video, location }) => {
   const title2 = title.split("&amp;").join("&");
   const title3 = title2.split("&#39;").join("'");
   const title4 = title3.split("&quot;").join('"');
-  // console.log(video);
+
   return (
     <div className="flex flex-col items-center">
       <div
