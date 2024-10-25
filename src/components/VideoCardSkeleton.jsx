@@ -26,7 +26,7 @@ const VideoCardSkeleton = ({ cards }) => {
                 baseColor={dark ? "#202020" : ""}
                 highlightColor={dark ? "#444" : ""}
               >
-                <Skeleton className="h-[200px] lg:h-[170px]" />
+                <Skeleton className="h-[250px] lg:h-[170px]" />
               </SkeletonTheme>
             </div>
             <p className="mt-2 px-3 font-bold lg:px-0">
