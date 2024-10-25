@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/Poppins-Regular.ttf);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    animation: fade 1s;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .light {
+    @apply w-full justify-center overflow-hidden bg-white;
+  }
+  .dark {
+    @apply min-h-screen w-full justify-center overflow-hidden bg-black text-white;
+  }
+  .selected {
+    @apply flex items-center gap-3 rounded-xl bg-black/10 px-3 py-3 text-base text-black dark:bg-white/20 dark:text-white;
+  }
+  .react-player {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px;
+  }
+  .videos {
+    @apply flex flex-wrap justify-center gap-5;
+  }
+
+  label {
+    @apply mb-2 mt-5 block;
+  }
+  /* <iframe width="894" height="505" src="https://www.youtube.com/embed/Qer3lwd5hyA" title="NOID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */
+}
