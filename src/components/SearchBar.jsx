@@ -27,6 +27,7 @@ const SearchBar = () => {
         placeholder="Search..."
         onChange={(e) => setSearchTerm(e.target.value)}
         type="text"
+        value={searchTerm}
       />
       <button className="rounded-r-2xl border-l-[1px] border-gray-300 bg-black/10 px-1 py-2 text-2xl dark:bg-white/10 md:cursor-pointer lg:px-5">
         <CiSearch />
